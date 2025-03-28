@@ -1,6 +1,6 @@
 
 html, body{
-    background-color: #FAEBD7;
+    background-color: #faebd7;
     margin: 0;
 }
 
@@ -19,6 +19,10 @@ nav{
     color: white;
 }
 
+.site-title{
+   text-align: center;
+   font-size: 40%;
+}
 #about, #expect, #schedule{
     margin-left: 5%;
    
@@ -27,18 +31,20 @@ nav{
 #divider{
     border: solid 10px #510614;
 }
-/*
-.curtain-left{
-    margin-left: -1%;
+
+.title-intro{
+    display: flex;
+    border: 5px black solid;
 }
 
-.curtain-right{
-    margin-right: -1%;
+.title-intro > div{
+    border: 5px blue solid;
 }
-    */
-#ticket{
-    width: 30%;
-    height: 30%;
+
+.site-name{
+    text-align:center;
+    font-size: 90%;
+    padding: 10%;
 }
 
 .Hello{
@@ -51,8 +57,8 @@ nav{
 .text{
     position: absolute;
     border: solid 3px black;
-   
 }
+
 button{
     font-family: 'Limelight';
     color: white;
