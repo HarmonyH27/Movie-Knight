@@ -3,7 +3,7 @@ html, body{
     margin: 0 0 0 10px;
 }
 
-#link{
+.nav-link{
     font-family: 'Limelight';
 }
 
@@ -45,6 +45,11 @@ button:hover{
     background-color: #DAAf05;
 }
 
+#nav-button:hover{
+    color: #DAAf05;
+    background-color: #510614;
+}
+
 h1,h2,h3{
     font-family: 'Limelight';
 }
@@ -57,10 +62,13 @@ button{
     padding: 5px 15px;
     font-family: 'Limelight';
 }
+
+
+
 .header-title{
     background-color:#fffafa;
     padding: 5px;
-    margin: 0 60% 0 10px;
+    margin: 100px 60% 0 10px;
     text-align: center;
     border-radius: 25px;
 }
@@ -73,6 +81,7 @@ button{
 
 .show-times{
     display:flex;
+    margin-bottom: 100px;
 }
 
 .movie-poster{
@@ -115,3 +124,6 @@ button{
 h3, li,p{
     color: #660F01;
 }
+
+/* Dark Mode */
+
