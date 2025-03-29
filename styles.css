@@ -1,0 +1,209 @@
+html, body{
+    background-color: #f6ebdd;
+    margin: 0;
+}
+
+h1, h2{
+    font-family:'Limelight';
+    color:#c40234;
+}
+
+.movie-title{
+    font-family:'Limelight';
+    color: #510614;
+    text-shadow: 2px 2px 6px #ffbe24;
+}
+
+p, h4{
+    font-family:'Limelight';
+    font-weight: 200px;
+    color:#510614;
+}
+
+button{
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-family: 'Limelight';
+    color: #FFFFFF;
+    background-color: #510614;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+button:hover{
+    background-color: #ffbe24;
+    color:#510614;
+}
+
+/*** Navigation Bar ***/
+
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    background-color: #A21324;
+    border-bottom: 8px solid #510614;
+    ;
+}
+
+.navbar ul li {
+    float: left;
+    margin: 0 10px 0 5px;
+    font-family: 'Limelight';
+}
+
+.navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 12px 5px 10px 5px;
+}
+
+.navbar ul li a:hover{
+    color: #ffbe24;
+}
+
+#nav-button:hover{
+    color: #ffbe24;
+    background-color: #510614;
+}
+
+/** Heading **/
+
+.curtain-header{
+    margin-bottom: 15%;
+}
+.website-name{
+    background-color: #fffcf7;
+    padding: 5px 50px 5px 50px;
+    margin: 20px 0 20px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.heading-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.signup-button{
+    margin-right: 20px;
+}
+
+.curtain-header{
+    display: flex;
+    margin-top: 52px;
+   
+}
+
+.curtain-img{
+    width: 70%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.curtain-left{
+    display:flex;
+    justify-content: flex-start;
+}
+
+.curtain-right{
+   display: flex;
+   justify-content: flex-end;
+}
+
+/** Info Section **/
+
+#expect{
+    margin-left: 50px;
+}
+
+#ticket-pic, #snack-pic{
+    width: 200px;
+    height: 200px;
+}
+
+#ticket-pic{
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+#about p{
+    font-weight: 200px;
+    font-size:large;
+}
+#expect ul li{
+    font-family:'Montserrat';
+    font-weight: 200px;
+    font-size:large;
+    color: #510614;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px 15% 30px;
+}
+
+.top-container{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+}
+
+.bottom-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/** Schedule Section **/
+
+.schedule{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px 0 30px;
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.movies{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.movie-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fffcf7;
+    border-radius: 10px;
+    padding: 15px 5px 15px 5px;
+    margin: 0 10px 0 10px;
+    box-shadow: 10px 15px #ffbe24;
+    border: #ffbe24 solid 3px;
+
+}
+
+.movie-poster-img{
+    height: auto;
+    width: 50%;
+    margin: 10px 5px 10px 5px;
+    box-shadow: 5px 5px 10px #d3d4d4;
+}
+
+
+
+
+
+/** Borders
+
+  border: #ffbe24 solid 5px;
+
+  **/

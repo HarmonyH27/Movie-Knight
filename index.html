@@ -2,71 +2,138 @@
 <html lang="en">
     <head>
         <title>Movie Knights</title>
-        <link href= "index.css" rel="stylesheet"/>
+        <link href= "styles.css" rel="stylesheet"/>
         <link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet'/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     
     <body>
 
-    <!-- Curtains -->
-    <!--
-    <div class="curtain-left">
-        <img src="images/curtain-left.png"  id = "left-curtain"/>
-    </div>
+        <!-- Navigation Bar-->
 
-    <div class="curtain-right">
-        <img src = "images/curtain-right.png"  id="right-curtain"/>
-    </div>
-    -->
+            <div class= "navbar">
+                <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>  
+                <li><a href="#">SHOW TIMES</a></li>
+                <li><button id="nav-button">TOGGLE DARK MODE</button></li>      
+                </ul>
+            </div>
 
-    <nav>
-        <div id="about"></div>
-        <div id="schedule"></div>
-    </nav>
 
-    <div id="nav"></div>
-    <div id="divider"></div>
+        <!-- Heading -->
+            <div class="curtain-header">
+                <div class="curtain-left">
+                    <img class="curtain-img" src="images/curtain-left.png">
+                </div>
 
-    <h1> MOVIE KNIGHTS</h1>
+                <div class="heading-container">
+                    <div class="website-name">
+                        <h1>MOVIE KNIGHT</h1>
+                    </div>
+                    <div class="heading-buttons">
+                        <div class="signup-button">
+                            <button>SIGN UP</button>
+                        </div>
+                        <div class="showtime-button">
+                            <button>SHOW TIMES</button>
+                        </div>
+                    </div>
+                </div>
 
-    <button>Sign up</button>
+                <div class="curtain-right">
+                    <img class="curtain-img" src="images/curtain-right.png">
+                </div>
+            </div>
+
+
+            <!-- About Section -->
+
+            <div class="info-container">
+                <div class="top-container">
+                    <div id ="about">
+                        <h2>About the Event</h2>
+                        <p>Welcome to Movie Knights! This is a monthly event where UCF knights can come
+                        together and watch movies. New movies are picked each month.</p>
+                    </div>
+
+                    <div class="ticket-pic">
+                        <img  id="ticket-pic" src="images/tickets-img.png">
+                    </div>
+                </div>
+                
+                <div class="bottom-container">
+                    <div class="snack-pic">
+                        <img id="snack-pic" src="images/drink-popcorn.png">
+                    </div>
+
+                    <div id="expect">
+                        <h2>What To Expect</h2>
+                        <ul>
+                            <li><b>Fun:</b> Hang out with friends</li>
+                            <li><b>Entertainment:</b> Have fun movie to watch</li>  
+                            <li><b>Food:</b> Popcorn and snacks to enjoy</li>
+                        </ul>
+                    </div>   
+                </div>
+            </div>
+
+
+        <!-- Schedule -->
+
+        <div class="schedule">
+            <div class="section-header">
+                 <h1>Show Times</h1>    
+            </div>
+        
+        <div class="movies">
+            <div class="movie-container">
+        
+                <div class="'movie-poster">
+                    <img class="movie-poster-img" src ="images/princessfrog-poster.png">
+                </div>
+
+                <div class="show-time-title">
+                    <h2 class ="movie-title">FEBRUARY</h2>   
+                    <h4>The Princess and the Frog</h4>   
+                </div>
+            </div>
+
+            <div class="movie-container">
+               
+                <div class="'movie-poster-img">
+                    <img class="movie-poster-img" src ="images/clueless-poster.png">
+                </div>
+
+                <div class="show-time-title">
+                    <h2 class ="movie-title">MARCH</h2>
+                    <h4>Clueless</h4>
+                </div>
+            </div>
+
+            <div class="movie-container">
+               
+                <div class="movie-poster">
+                    <img class="movie-poster-img"src ="images/princessdiaries-poster.png">
+                </div>
+
+                <div class="show-time-title">
+                    <h2 class ="movie-title">APRIL</h2>
+                    <h4>The Princess Diaries</h4>   
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+
+       
     
-
-    <div id="about">
-    <h2>About the Event</h2>
-
-    <p>Welcome to Movie Knights! This is a monthly event where UCF knights can come together and watch movies.
-         New movies are picked each month. </p>
-    </div>
-
-    <div id="expect">
-    <h2> What to Expect</h2>
     
-    <ul>
-        <li> <b>Fun:</b> <i>Hang out with friends</i></li>
-        <li> <b>Entertainment:</b> <i>fun movie to watch</i></li>
-        <li> <b>Food:</b> <i>Popcorn and snacks to enjoy</i></li>
-    </ul>
-    </div>
-
-    <div id="schedule">
-    <h2>Show Times:</h2>
-    
-    <!---
-    <h3>January</h3>
-    <div class="Hello">
-        <div class="text">Movie: Barbie</div>
-    </div>
-    <p>Event description....</p>
-
-    <h3>February</h3>
-    <p>Event description....</p>
-
-    <h3>March</h3>
-    <p>Event description....</p>
-    
-    -->
-    </div>
 
     </body>
 </html>
