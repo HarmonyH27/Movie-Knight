@@ -14,7 +14,13 @@ h1, h2{
     text-shadow: 2px 2px 6px #ffbe24;
 }
 
-p, h4{
+p{
+    font-family: 'Montserrat';
+    font-weight: 200px;
+    color:#510614;
+}
+
+h4{
     font-family:'Limelight';
     font-weight: 200px;
     color:#510614;
@@ -69,7 +75,7 @@ button:hover{
     color: #ffbe24;
 }
 
-#nav-button:hover{
+#theme-button:hover{
     color: #ffbe24;
     background-color: #510614;
 }
@@ -77,7 +83,7 @@ button:hover{
 /** Heading **/
 
 .curtain-header{
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 .website-name{
     background-color: #fffcf7;
@@ -149,7 +155,7 @@ button:hover{
 .info-container{
     display: flex;
     flex-direction: column;
-    margin: 0 30px 15% 30px;
+    margin: 0 30px 10% 30px;
 }
 
 .top-container{
@@ -198,8 +204,39 @@ button:hover{
     box-shadow: 5px 5px 10px #d3d4d4;
 }
 
+/** Dark Mode **/
 
+.dark-mode {
+    background-color:#510614;
+}
 
+#theme-button::after{
+    background-color: #550C1A;
+}
+
+.dark-mode p{
+    color: #fffcf7;
+}
+
+.dark-mode #expect ul li{
+    color: #fffcf7;
+}
+
+.dark-mode #show-time,
+.dark-mode .info-heading,
+.dark-mode h3{
+    color:#ffbe24;
+}
+
+.dark-mode .h-button{
+    background-color: #ffbe24;
+    color:#A21324;
+}
+
+.dark-mode .h-button:hover{
+    color:#550C1A;
+}
+ 
 
 
 /** Borders

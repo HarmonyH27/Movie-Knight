@@ -15,10 +15,10 @@
 
             <div class= "navbar">
                 <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>  
-                <li><a href="#">SHOW TIMES</a></li>
-                <li><button id="nav-button">TOGGLE DARK MODE</button></li>      
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>  
+                <li><a href="#schedule">SHOW TIMES</a></li>
+                <li><button id="theme-button">TOGGLE DARK MODE</button></li>      
                 </ul>
             </div>
 
@@ -30,15 +30,15 @@
                 </div>
 
                 <div class="heading-container">
-                    <div class="website-name">
+                    <div class="website-name" id="home">
                         <h1>MOVIE KNIGHT</h1>
                     </div>
                     <div class="heading-buttons">
                         <div class="signup-button">
-                            <button>SIGN UP</button>
+                            <button class="h-button">SIGN UP</button>
                         </div>
                         <div class="showtime-button">
-                            <button>SHOW TIMES</button>
+                            <button class="h-button">SHOW TIMES</button>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
             <div class="info-container">
                 <div class="top-container">
                     <div id ="about">
-                        <h2>About the Event</h2>
+                        <h2 class="info-heading">About the Event</h2>
                         <p>Welcome to Movie Knights! This is a monthly event where UCF knights can come
                         together and watch movies. New movies are picked each month.</p>
                     </div>
@@ -70,7 +70,7 @@
                     </div>
 
                     <div id="expect">
-                        <h2>What To Expect</h2>
+                        <h2 class="info-heading">What To Expect</h2>
                         <ul>
                             <li><b>Fun:</b> Hang out with friends</li>
                             <li><b>Entertainment:</b> Have fun movie to watch</li>  
@@ -83,9 +83,9 @@
 
         <!-- Schedule -->
 
-        <div class="schedule">
+        <div class="schedule" id="schedule">
             <div class="section-header">
-                 <h1>Show Times</h1>    
+                 <h1 id="show-time">Show Times</h1>    
             </div>
         
         <div class="movies">
@@ -134,6 +134,6 @@
        
     
     
-
+        <script src="index.js"></script>
     </body>
 </html>
