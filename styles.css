@@ -182,6 +182,7 @@ button:hover{
 .movies{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 15%;
 }
 
 .movie-container{
@@ -204,7 +205,7 @@ button:hover{
     box-shadow: 5px 5px 10px #d3d4d4;
 }
 
-/** Dark Mode **/
+/** Dark Toggle Mode **/
 
 .dark-mode {
     background-color:#510614;
@@ -224,23 +225,65 @@ button:hover{
 
 .dark-mode #show-time,
 .dark-mode .info-heading,
+.dark-mode #rsvp-heading,
 .dark-mode h3{
     color:#ffbe24;
 }
 
-.dark-mode .h-button{
+.dark-mode .h-button,
+.dark-mode #rsvp-button{
     background-color: #ffbe24;
     color:#A21324;
 }
 
-.dark-mode .h-button:hover{
+.dark-mode .h-button:hover,
+.dark-mode #rsvp-button:hover{
     color:#550C1A;
+    background-color: #d69e1d
+
 }
+
+.dark-mode label{
+    color: #fffcf7;
+}
+
+
+/*** RSVP Section ***/
+
+.rsvp-container{
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.rsvp-para{
+    width: 55%;
+    padding-right: 10px;
+}
+
+.rsvp-participants{
+    width: 45%;
+    padding-right: 10px;
+}
+
+.form-container{
+    display:flex;
+    gap: 20%;
+}
+
+#rsvp-button{
+    margin-top: 0;
+}
+
+
+
  
 
 
 /** Borders
 
-  border: #ffbe24 solid 5px;
+  border:  solid 5px;
 
   **/

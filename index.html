@@ -17,7 +17,7 @@
                 <ul>
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>  
-                <li><a href="#schedule">SHOW TIMES</a></li>
+                <li><a href="#">Links</a></li>
                 <li><button id="theme-button">TOGGLE DARK MODE</button></li>      
                 </ul>
             </div>
@@ -35,7 +35,9 @@
                     </div>
                     <div class="heading-buttons">
                         <div class="signup-button">
+                            <a href="#schedule">
                             <button class="h-button">SIGN UP</button>
+                            </a>
                         </div>
                         <div class="showtime-button">
                             <button class="h-button">SHOW TIMES</button>
@@ -72,8 +74,8 @@
                     <div id="expect">
                         <h2 class="info-heading">What To Expect</h2>
                         <ul>
-                            <li><b>Fun:</b> Hang out with friends</li>
-                            <li><b>Entertainment:</b> Have fun movie to watch</li>  
+                            <li><b>Fun:</b> Hang out with friends</li><br>
+                            <li><b>Entertainment:</b> Have fun movie to watch</li> <br>
                             <li><b>Food:</b> Popcorn and snacks to enjoy</li>
                         </ul>
                     </div>   
@@ -123,8 +125,44 @@
                     <h2 class ="movie-title">APRIL</h2>
                     <h4>The Princess Diaries</h4>   
                 </div>
-                
             </div>
+        </div>
+
+        <!-- RSVP Form-->
+
+        <div id="rsvp">
+            <h1 id = "rsvp-heading">RVSP</h1>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    <p>Complete the form below to watch amazing movies with other knights!</p>
+                </div>
+                <div class="rsvp-participants">
+                    <p>🎟️  Aaliyah from Oviedo has RSVP'd</p>
+                    <p>🎟️  Chloe from Winter Park has RSVP'd</p>
+                    <p>🎟️  Elijah from Orlando has RSVP'd</p>
+                    <p id="rsvp-count"> ⭐ 3 people have RSVP'd to this event!"</p>
+
+                </div>
+            </div>
+
+            <!-- Sign RSVP Form-->
+
+            <div class="form-container">
+                <form id="rsvp-form" title="rsvp-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city">
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email">
+                </form>
+
+                <button id="rsvp-button">Sumbit RSVP</button>
+            </div>
+
         </div>
 
 
