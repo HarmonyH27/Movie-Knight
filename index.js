@@ -9,13 +9,13 @@ const toggleDarkMode = () => {
 }
 
 //  Add Participant //
-const addParticipant = () =>{
+const addParticipant = (person) =>{
     
-    let name = document.querySelector('#rsvp-name').value;
-    let city = document.querySelector('#rsvp-city').value;
+    //let name = document.querySelector('#rsvp-name').value;
+    //let city = document.querySelector('#rsvp-city').value;
 
     const rsvpInput = document.createElement("p");
-    rsvpInput.innerText = "🎟️" + name + " from " +  city + " has RSVP'd";   
+    rsvpInput.innerText = "🎟️" + person.name + " from " +  person.city + " has RSVP'd";   
     participantBox.appendChild(rsvpInput);
 }
 
@@ -26,23 +26,26 @@ const validateForm = () => {
 
     var rsvpInputs = document.querySelector("#rsvp-form").elements;
 
+    let person = {
+        name: rsvpInputs[0].value,
+        hometown: rsvpInputs[1].value,
+        email: rsvpInputs[2].value
+    };
+
     for(let i = 0; i < rsvpInputs.length; i++)
     {
         if(rsvpInputs[i].value.length < 2)
         {
-            //console.log(rsvpInputs[i]);
             containsErrors = true;
             rsvpInputs[i].classList.add("error");
-        }
-        else if(rsvpInputs <= 2)
-        {
+        }else{
             rsvpInputs[i].classList.remove("error");
         }
     }
 
     if(containsErrors == false)
     {
-        addParticipant();
+        addParticipant(person);
 
         for(let j = 0; j < rsvpInputs.length; j++)
             {

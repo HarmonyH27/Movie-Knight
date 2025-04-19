@@ -1,62 +1,325 @@
-
 html, body{
-    background-color: #FAEBD7;
+    background-color: #f6ebdd;
     margin: 0;
 }
 
-h1,h2,h3{
-    color: #C40234;
+h1, h2{
     font-family:'Limelight';
+    color:#c40234;
 }
 
-p, li{
-    color: #310E07;
+.movie-title{
+    font-family:'Limelight';
+    color: #510614;
+    text-shadow: 2px 2px 6px #ffbe24;
 }
 
-nav{
-    background-color:#A21324;
-    padding-left: 10%;
-    color: white;
+p{
+    font-family: 'Montserrat';
+    font-weight: 200px;
+    color:#510614;
 }
 
-#about, #expect, #schedule{
-    margin-left: 5%;
-   
+h4{
+    font-family:'Limelight';
+    font-weight: 200px;
+    color:#510614;
 }
-
-#divider{
-    border: solid 10px #510614;
-}
-
-#ticket{
-    width: 30%;
-    height: 30%;
-}
-
-.Hello{
-    position: relative;
-    text-align: center;
-    border: solid 3px black;
-    
-}
-
-.text{
-    position: absolute;
-    border: solid 3px black;
-   
-}
-
-input.error {
-    border-style: solid;
-    border-width: 2px;
-    background-color: red;
-  }
 
 button{
+    margin-top: 8px;
+    margin-bottom: 10px;
     font-family: 'Limelight';
-    color: white;
-    background-color: #A21324;
-    border-color: #A21324;
+    color: #FFFFFF;
+    background-color: #510614;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
 }
 
-/** RSVP Section **/
+button:hover{
+    background-color: #ffbe24;
+    color:#510614;
+}
+
+/*** Navigation Bar ***/
+
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    background-color: #A21324;
+    border-bottom: 8px solid #510614;
+    ;
+}
+
+.navbar ul li {
+    float: left;
+    margin: 0 10px 0 5px;
+    font-family: 'Limelight';
+}
+
+.navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 12px 5px 10px 5px;
+}
+
+.navbar ul li a:hover{
+    color: #ffbe24;
+}
+
+#theme-button:hover{
+    color: #ffbe24;
+    background-color: #510614;
+}
+
+/** Heading **/
+
+.curtain-header{
+    margin-bottom: 10%;
+}
+.website-name{
+    background-color: #fffcf7;
+    padding: 5px 50px 5px 50px;
+    margin: 20px 0 20px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.heading-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.signup-button{
+    margin-right: 20px;
+}
+
+.curtain-header{
+    display: flex;
+    margin-top: 52px;
+   
+}
+
+.curtain-img{
+    width: 70%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.curtain-left{
+    display:flex;
+    justify-content: flex-start;
+}
+
+.curtain-right{
+   display: flex;
+   justify-content: flex-end;
+}
+
+/** Info Section **/
+
+#expect{
+    margin-left: 50px;
+}
+
+#ticket-pic, #snack-pic{
+    width: 200px;
+    height: 200px;
+}
+
+#ticket-pic{
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+#about p{
+    font-weight: 200px;
+    font-size:large;
+}
+#expect ul li{
+    font-family:'Montserrat';
+    font-weight: 200px;
+    font-size:large;
+    color: #510614;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px 10% 30px;
+}
+
+.top-container{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+}
+
+.bottom-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/** Schedule Section **/
+
+.schedule{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px 0 30px;
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.movies{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15%;
+}
+
+.movie-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fffcf7;
+    border-radius: 10px;
+    padding: 15px 5px 15px 5px;
+    margin: 0 10px 0 10px;
+    box-shadow: 10px 15px #ffbe24;
+    border: #ffbe24 solid 3px;
+
+}
+
+.movie-poster-img{
+    height: auto;
+    width: 50%;
+    margin: 10px 5px 10px 5px;
+    box-shadow: 5px 5px 10px #d3d4d4;
+}
+
+/** Dark Toggle Mode **/
+
+.dark-mode {
+    background-color:#510614;
+}
+
+#theme-button::after{
+    background-color: #550C1A;
+}
+
+.dark-mode p{
+    color: #fffcf7;
+}
+
+.dark-mode #expect ul li{
+    color: #fffcf7;
+}
+
+.dark-mode #show-time,
+.dark-mode .info-heading,
+.dark-mode #rsvp-heading,
+.dark-mode h3{
+    color:#ffbe24;
+}
+
+.dark-mode .h-button,
+.dark-mode #rsvp-button{
+    background-color: #ffbe24;
+    color:#A21324;
+}
+
+.dark-mode .h-button:hover,
+.dark-mode #rsvp-button:hover{
+    color:#550C1A;
+    background-color: #d69e1d
+
+}
+
+.dark-mode label{
+    color: #fffcf7;
+}
+
+
+/*** RSVP Section ***/
+
+.rsvp-container{
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.rsvp-para{
+    width: 55%;
+    padding-right: 10px;
+}
+
+.rsvp-participants{
+    width: 45%;
+    padding-right: 10px;
+}
+
+.form-container{
+    display:flex;
+    gap: 20%;
+}
+
+#rsvp-button{
+    margin-top: 0;
+}
+
+.error {
+    border-style: solid;
+    border-color: red;
+    background-color: #ffc5c5;
+    border-width: 2px;
+  }
+
+  /** Modal **/
+
+  
+.modal{
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.4);
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+}
+
+
+.modal-container{
+    padding: 50px;
+    width: 55%;
+
+    background-color: lightsteelblue;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+
+
+/** Borders
+  border:  solid 5px;
+**/
+

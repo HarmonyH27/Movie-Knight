@@ -277,13 +277,14 @@ button:hover{
     margin-top: 0;
 }
 
+.error {
+    border-style: solid;
+    border-width: 2px;
+    background-color: red;
+  }
 
-
- 
 
 
 /** Borders
-
   border:  solid 5px;
-
-  **/
+**/
