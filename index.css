@@ -1,0 +1,61 @@
+
+html, body{
+    background-color: #FAEBD7;
+    margin: 0;
+}
+
+h1,h2,h3{
+    color: #C40234;
+    font-family:'Limelight';
+}
+
+p, li{
+    color: #310E07;
+}
+
+nav{
+    background-color:#A21324;
+    padding-left: 10%;
+    color: white;
+}
+
+#about, #expect, #schedule{
+    margin-left: 5%;
+   
+}
+
+#divider{
+    border: solid 10px #510614;
+}
+
+#ticket{
+    width: 30%;
+    height: 30%;
+}
+
+.Hello{
+    position: relative;
+    text-align: center;
+    border: solid 3px black;
+    
+}
+
+.text{
+    position: absolute;
+    border: solid 3px black;
+   
+}
+
+input.error {
+    border-style: solid;
+    border-width: 2px;
+    background-color: red;
+  }
+
+button{
+    font-family: 'Limelight';
+    color: white;
+    background-color: #A21324;
+    border-color: #A21324;
+}
+
