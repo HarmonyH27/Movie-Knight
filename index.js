@@ -1,44 +1,57 @@
-
-// Dark Toggle
-
 let themeButton = document.querySelector('#theme-button');
 let rsvpButton = document.querySelector('#rsvp-button');
 
-let count = 3;
-
 const participantBox = document.querySelector('.rsvp-participants');
 
-
+//  Dark Toggle //
 const toggleDarkMode = () => {
     document.body.classList.toggle("dark-mode");
 }
 
-const addParticipant = (event) =>{
+//  Add Participant //
+const addParticipant = () =>{
     
-    let name = document.querySelector('#name').value;
-    let city = document.querySelector('#city').value;
+    let name = document.querySelector('#rsvp-name').value;
+    let city = document.querySelector('#rsvp-city').value;
 
+    const rsvpInput = document.createElement("p");
+    rsvpInput.innerText = "🎟️" + name + " from " +  city + " has RSVP'd";   
+    participantBox.appendChild(rsvpInput);
+}
 
-    if((name == '') || (city == '')){
-        return;
-    }else{
-        const rsvpInput = document.createElement("p");
-        rsvpInput.innerText = "🎟️" + name + " from " +  city + " has RSVP'd";   
-        participantBox.appendChild(rsvpInput);
+//  Validate Form //
+const validateForm = () => {
 
-        //Clear field
-        document.querySelector('#name').value = '';
-        document.querySelector('#city').value = '';
-        document.querySelector('#email').value = '';
+    let containsErrors = false;
 
+    var rsvpInputs = document.querySelector("#rsvp-form").elements;
+
+    for(let i = 0; i < rsvpInputs.length; i++)
+    {
+        if(rsvpInputs[i].value.length < 2)
+        {
+            //console.log(rsvpInputs[i]);
+            containsErrors = true;
+            rsvpInputs[i].classList.add("error");
+        }
+        else if(rsvpInputs <= 2)
+        {
+            rsvpInputs[i].classList.remove("error");
+        }
     }
 
+    if(containsErrors == false)
+    {
+        addParticipant();
 
-    event.preventDefault();
-
+        for(let j = 0; j < rsvpInputs.length; j++)
+            {
+                rsvpInputs[j].value = "";
+            }
+    }
 }
 
 themeButton.addEventListener('click', toggleDarkMode);
-rsvpButton.addEventListener('click', addParticipant)
+rsvpButton.addEventListener('click', validateForm);
 
 

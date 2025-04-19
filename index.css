@@ -27,15 +27,7 @@ nav{
 #divider{
     border: solid 10px #510614;
 }
-/*
-.curtain-left{
-    margin-left: -1%;
-}
 
-.curtain-right{
-    margin-right: -1%;
-}
-    */
 #ticket{
     width: 30%;
     height: 30%;
@@ -53,9 +45,18 @@ nav{
     border: solid 3px black;
    
 }
+
+input.error {
+    border-style: solid;
+    border-width: 2px;
+    background-color: red;
+  }
+
 button{
     font-family: 'Limelight';
     color: white;
     background-color: #A21324;
     border-color: #A21324;
 }
+
+/** RSVP Section **/
